@@ -1,0 +1,119 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ......................... 12
+2. Variables ...................... 16
+3. Estilos generales .............. 27
+-------------------- */
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ----- Variables ----- */
+* {
+	--primary-font-family: 'Poppins', sans-serif;
+	--body-bg-color: #EEF2F9;
+	--btn-bg-color: #4788E9;
+	--text-color: #191847;
+	--white-color: #FFFFFF;
+	--black-color: #000000;
+	--font-size: 1rem;
+	--lh-text: 22px;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+	font-family: var(--primary-font-family);
+	background-color: var(--body-bg-color);
+	color: var(--text-color);
+	font-size: var(--font-size);
+	line-height: var(--lh-text);
+
+	overflow: hidden;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* -------------- Card --------------- */
+.card {
+	background-color: white;
+	width: 50%;
+	height: 60%;
+	padding: 80px;
+	border: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 50px rgb(184, 184, 184);
+	display: flex;
+}
+
+/* -------------- Card Image --------------- */
+.card-image{
+	margin: 0;
+}
+
+.image-product {
+	height: 50%;
+}
+
+/* -------------- Card Content --------------- */
+
+/* -------- Card Header -------- */
+
+.card-text-status {
+	background-color: var(--text-color);
+	color: white;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+/* -------- Card Body -------- */
+
+.card-title-product {
+	line-height: 1.5;
+}
+
+.card-prize-actual {
+	margin-top: 10px;
+}
+
+.card-button-add {
+	background-color: var(--btn-bg-color);
+	color: white;
+	box-shadow: 0px 5px #2859a1;
+
+	border: none;
+	border-radius: 10px;
+
+	width: 100%;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+.card-number-product {
+	margin-top: 30px;
+}
+
+/* -------- Card Footer -------- */
+
+.card-footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.cardfooter-button-add {
+	background-color: white;
+	border: 2px solid #adadad;
+	border-radius: 10px;
+	width: 50%;
+	margin-inline: 20px;
+	padding: 15px;
+	margin-bottom: 20px;
+
+	
+}
