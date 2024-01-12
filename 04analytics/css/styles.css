@@ -1,0 +1,149 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- */
+
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css?family=Merryweather&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+
+/* ----- Variables ----- */
+* {
+	--title-font-family: 'Merryweather', sans-serif;
+	--body-font-family: 'Poppins', sans-serif;
+
+	--body-bg-color: #D2DDF6;
+	--card-bg-color: #F6F9FF;
+	--text-color: #12163C;
+
+	--blue-color-1: #96B3FF;
+	--blue-color-2: #6792FF;
+	--blue-color-3: #4473EA;
+	--blue-color-4: #1A52E1;
+
+	--fs-text: 1rem;
+	--lh-text: 22px;
+
+
+}
+
+
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+	font-family: var(--primary-font-family);
+	background-color: var(--body-bg-color);
+	color: var(--text-color);
+	font-size: var(--fs-text);
+	line-height: var(--lh-text);
+
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-header {
+	font-family: var(--body-font-family);
+}
+
+/* ----- card-body ----- */
+.card-body {
+	background-color: var(--card-bg-color);
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 10px 15px #c9d6f5;
+}
+
+/* ----- card content ----- */
+.card-content{
+	display: flex;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* ----- card circle ----- */
+.card-circle{
+	width: 200px;
+	height: 200px;
+	margin-right: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url(../aro.png);
+	background-size: cover;
+}
+
+.card-title{
+	font-family: var(--body-font-family);
+	text-align: center;
+	padding: 20px;
+}
+
+
+
+
+/* ----- card porcent ----- */
+.card-detalle{
+	display: flex;
+	padding: 10px;
+}
+
+
+.barra1{
+	background-color: var(--blue-color-2);
+	margin-left: 100px;
+	margin-right: 20px;
+	width: 200px;
+	height: auto;
+	border-radius: 10px;
+	text-align: end;
+	
+}
+
+.barra2{
+	background-color: var(--blue-color-3);
+	margin-left: 125px;
+	margin-right: 20px;
+	width: 150px;
+	height: auto;
+	border-radius: 10px;
+	text-align: end;
+	
+}
+
+.barra3{
+	background-color: var(--blue-color-4);
+	margin-left: 245px;
+	margin-right: 20px;
+	width: 100px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.barra4{
+	background-color: var(--blue-color-1);
+	margin-left: 285px;
+	margin-right: 20px;
+	width: 50px;
+	height: auto;
+	border-radius: 10px;
+}
+
+/* ----- card link ----- */
+
+.card-link{
+	font-family: var(--body-font-family);
+	text-align: right;
+}
