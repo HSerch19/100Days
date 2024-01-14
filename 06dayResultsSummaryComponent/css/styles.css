@@ -1,0 +1,298 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Variables ............. 9
+2. Estilos generales ..... 34
+-------------------- 
+*/
+
+/* ----- Variables ----- */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+
+
+/* ----- Variables ----- */
+* {    
+    /* ----- Fuente ----- */
+    --Family: 'Hanken Grotesk', serif;
+    --Weights: 500, 700, 800;
+    
+    /* ----- Colores ----- */
+    --Light_red: hsl(0, 100%, 67%);
+    --Orangey_yellow: hsl(39, 100%, 56%);
+    --Green_teal: hsl(166, 100%, 37%);
+    --Cobalt_blue: hsl(234, 85%, 45%);
+
+    --Light_slate_blue: hsl(252, 100%, 67%); /* ----- Background ----- */
+    --Light_royal_blue: hsl(241, 81%, 54%); /* ----- Background ----- */
+
+    --Violet_blue: hsla(256, 72%, 46%, 1); /* ----- circle ----- */
+    --Persian_blue: hsla(241, 72%, 46%, 0); /* ----- circle ----- */
+
+    --White: hsl(0, 0%, 100%);
+    --Pale_blue: hsl(221, 100%, 96%);
+    --Light_lavender: hsl(241, 100%, 89%);
+    --Dark_gray_blue: hsl(224, 30%, 27%);
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+body {
+    
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: var(--Family);
+    background-color: var(--White);
+    box-shadow: 10px 10px 50px var(--Light_lavender);
+    height: 667px;
+    width: 375px;
+    
+}
+
+/* ----- BLUE CARD ----- */
+
+.blue_card {   
+    border: 1px solid transparent;
+    background: linear-gradient(
+        to top, var(--Light_royal_blue), var(--Light_slate_blue)
+    ); 
+    text-align: center;
+    padding: 0px 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.blue_card_title {
+    color: var(--Light_lavender);
+    margin: 5px;
+}
+
+
+.blue_card_bg_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue_card_circle {
+    background: linear-gradient(
+        to top, var(--Persian_blue), var(--Violet_blue)
+    );
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.blue_card_circle_number-gigant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    font-size: 50px;
+    margin: 0px;
+}
+
+.blue_card_cicle_number-small{
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+}
+
+.blue_card_title-footer {
+    color: var(--White);
+    margin: 5px 10px 0px 10px;
+}
+
+.blue_card_description{
+    color: var(--Light_lavender);
+    font-size: 20px;
+}
+
+
+/* ----- WHITE CARD ----- */
+
+.white_card {
+    margin: 0px 20px 0px 20px;
+}
+
+.card_reaction{
+    color: var(--Light_red);
+    background-color: rgba(231, 145, 145, 0.308);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px 0px 5px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_reaction_img {
+    display: flex;
+    align-items: center;
+}
+
+.card_memory{
+    color: var(--Orangey_yellow);
+    background-color: rgba(255, 255, 185, 0.623);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px 0px 5px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_memory_img {
+    display: flex;
+    align-items: center;
+}
+
+.card_verbal{
+    color: var(--Green_teal);
+    background-color: rgba(210, 255, 210, 0.527);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px 0px 5px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_verbal_img {
+    display: flex;
+    align-items: center;
+}
+
+.card_visual{
+    color: var(--Cobalt_blue);
+    background-color: rgba(187, 187, 250, 0.39);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px 0px 5px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_visual_img {
+    display: flex;
+    align-items: center;
+}
+
+.title_card{
+    margin-left: 5px;
+}
+
+.number_card_left {
+    color: black;
+}
+
+.number_card_right {
+    color: gray;
+    font-style: normal;
+}
+
+.card_button{
+    text-align: center;
+}
+
+.button {
+    background-color: var(--Dark_gray_blue);
+    color: var(--White);
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+
+@media (min-width: 700px) {
+    .container{
+        display: flex;
+        height: 500px;
+        width: 700px;
+        border-radius: 20px;
+    }
+
+    /* ----- BLUE CARD ----- */
+
+    .blue_card {
+        border-radius: 20px;
+        padding: 20px;
+        width: 50%;
+    }
+
+    .blue_card_title {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .blue_card_circle {
+        background: linear-gradient(
+            to top, var(--Persian_blue), var(--Violet_blue)
+        );
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        padding: 50px;
+    }
+    
+    .blue_card_circle_number-gigant {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--White);
+        font-size: 80px;
+        margin: 0px;
+    }
+    
+    .blue_card_cicle_number-small{
+        color: var(--White);
+        display: flex;
+        justify-content: center;
+    }
+
+    .blue_card_title-footer {
+        color: var(--White);
+        font-size: 30px;
+        padding: 10px;
+    }
+    
+    .blue_card_description{
+        color: var(--Light_lavender);
+        font-size: 25px;
+        width: 100%;
+    }
+
+    /* ----- WHITE CARD ----- */
+    .white_card {
+        width: 50%;
+    }
+
+    .white_card_title{
+        padding: 20px 0px 0px 0px;
+        font-size: 20px;
+    }
+
+    .card_container{
+        margin: 50px 0px 50px 0px;
+    }
+
+
+
+}
